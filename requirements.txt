@@ -3,7 +3,6 @@ psycopg2-binary
 
 requests
 pandas
-re
 geopy
 
 numpy
