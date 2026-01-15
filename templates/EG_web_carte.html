@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paris Culture - La Carte</title>
+    <link rel="stylesheet" href="/static/EG_web.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link rel="icon" href="/static/images/logo.png" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <a href="#" class="logo">
+        <img src="/static/images/logo.png" alt="Logo" border-radius="50%" />
+        Paris Culture
+      </a>
+      <ul class="nav-links">
+        <li><a href="/projet">Le Projet</a></li>
+        <li><a href="/">La Carte</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Menu déroulant -->
+    <div class="menu-deroulant" id="menuDeroulant">
+      <div class="menu-content">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="/projet">Le Projet</a></li>
+          <li><a href="/">La Carte</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+        <button class="fermer-menu">×</button>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="parallax">
+      <div class="parallax-bg-carte"></div>
+      <div class="header-content">
+        <h1 style="color: var(--bleu-fonce)">La Carte</h1>
+        <h2>ou le Graal des Parisien.ne.s curieux.ses</h2>
+        <a href="#carte" class="button">C'est parti !</a>
+      </div>
+    </header>
+
+    <!-- Section principale -->
+    <section class="principal-section" id="carte">
+      <h2 style="color: var(--bleu-fonce)">Comment marche la carte ?</h2>
+      <p>
+        Rien de neuf par rapport à d'autres cartes : vous pouvez zoomer,
+        dézoomer, cliquer sur un point pour découvrir l'activité associée, et
+        même (bientôt) filtrer les lieux et activités selon vos préférences.
+      </p>
+
+      <!-- Ajouter cette div après le paragraphe de description -->
+      <div style="text-align: center; margin-bottom: 2rem">
+        <p
+          id="statut-activites"
+          style="font-size: 1.2rem; color: var(--bleu-fonce)"
+        >
+          Chargement des activités du jour...
+        </p>
+      </div>
+
+      <div class="carte-container">
+        <div class="carte-interactive" style="width: 100%">
+          <div id="map" style="height: 600px; border-radius: 10px"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-illustration-container">
+        <svg
+          class="footer-illustration"
+          viewBox="0 0 600 100"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M-100,50 
+            C-80,10 -40,90 0,20 
+            C40,-50 80,110 120,30 
+            C160,-50 200,110 240,40 
+            C280,-30 320,90 360,20 
+            C400,-50 440,110 480,50 
+            C520,-10 560,90 600,30 
+            C640,-30 680,110 720,50"
+            fill="none"
+            stroke="var(--bleu-fonce)"
+            stroke-width="2"
+            stroke-dasharray="5,5"
+          />
+        </svg>
+        <p class="footer-credits">© Emilie Gariazzo</p>
+      </div>
+    </footer>
+
+    <!-- Bouton retour en haut -->
+    <div class="button-top" id="button-top">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 19V5M12 5L5 12M12 5L19 12"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+
+    <script src="/static/EG_web.js"></script>
+  </body>
+</html>

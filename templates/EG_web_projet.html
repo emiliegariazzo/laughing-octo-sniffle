@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paris Culture - Le Projet</title>
+    <link rel="stylesheet" href="/static/EG_web.css" />
+    <link rel="icon" href="/static/images/logo.png" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <a href="#" class="logo">
+        <img src="/static/images/logo.png" alt="Logo" border-radius="50%" />
+        Paris Culture
+      </a>
+      <ul class="nav-links">
+        <li><a href="/projet">Le Projet</a></li>
+        <li><a href="/">La Carte</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Menu déroulant -->
+    <div class="menu-deroulant" id="menuDeroulant">
+      <div class="menu-content">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="/projet">Le Projet</a></li>
+          <li><a href="/">La Carte</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+        <button class="fermer-menu">×</button>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="parallax">
+      <div class="parallax-bg-projet"></div>
+      <div class="header-content">
+        <h1 style="color: var(--vert-fonce)">Le Projet</h1>
+        <h2>Rassembler toute l'offre culturelle parisienne</h2>
+        <a href="/" class="button">Je veux me culturer&nbsp;!</a>
+      </div>
+    </header>
+
+    <!-- Section principale -->
+    <section class="principal-section">
+      <h2 style="color: var(--vert-fonce)">
+        Paris Culture : un besoin, une solution
+      </h2>
+      <div class="columns-container">
+        <div class="column">
+          <h3>Un projet universitaire</h3>
+          <p>
+            Dans le cadre de ma L3, j'ai eu l'occasion de mener un projet d'une
+            ambition inédite. <br />
+            Passionnée de tous les types d'art et Parisienne perdue dans
+            l'étendue de l'offre culturelle de sa ville, j'ai été illuminée par
+            une idée&nbsp;: centraliser toutes les activités culturelles
+            possibles et imaginables à Paris&nbsp;!
+          </p>
+        </div>
+        <div class="column">
+          <h3>Paris Data&nbsp;: une base de données exhaustive</h3>
+          <p>
+            Qui de mieux que la Ville de Paris pour me fournir des données sur
+            Paris&nbsp;? J'ai décidé de me concentrer sur les activités
+            recensées sur le site de
+            <a
+              href="https://opendata.paris.fr/explore/dataset/que-faire-a-paris-/information/?disjunctive.access_type&disjunctive.price_type&disjunctive.deaf&disjunctive.blind&disjunctive.pmr&disjunctive.address_city&disjunctive.address_zipcode&disjunctive.address_name&disjunctive.programs"
+              >Paris Data</a
+            >, pour constituer une belle base.
+          </p>
+        </div>
+        <div class="column">
+          <h3>Pas de hiérarchisation</h3>
+          <p>
+            Ce qui me frustre dans les sites classiques, c'est que je ne suis
+            pas entièrement libre de choisir&nbsp;: les informations sont
+            hiérarchisées, et ça se comprend vu le nombre d'activités
+            proposées&nbsp;! Mais pour mon site, j'ai eu envie de laisser le
+            choix entièrement libre, en proposant simplement une carte, et vos
+            critères.
+          </p>
+        </div>
+      </div>
+      <div class="button-center">
+        <a href="/" class="button">Je veux me culturer !</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-illustration-container">
+        <svg
+          class="footer-illustration"
+          viewBox="0 0 600 100"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M-100,50 
+            C-80,10 -40,90 0,20 
+            C40,-50 80,110 120,30 
+            C160,-50 200,110 240,40 
+            C280,-30 320,90 360,20 
+            C400,-50 440,110 480,50 
+            C520,-10 560,90 600,30 
+            C640,-30 680,110 720,50"
+            fill="none"
+            stroke="var(--vert-fonce)"
+            stroke-width="2"
+            stroke-dasharray="5,5"
+          />
+        </svg>
+        <p class="footer-credits">© Emilie Gariazzo</p>
+      </div>
+    </footer>
+
+    <!-- Bouton retour en haut -->
+    <div class="button-top" id="button-top">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 19V5M12 5L5 12M12 5L19 12"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+
+    <script src="/static/EG_web.js"></script>
+  </body>
+</html>
