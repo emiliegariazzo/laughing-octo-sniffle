@@ -1,0 +1,13 @@
+Flask
+psycopg2-binary
+
+requests
+pandas
+re
+geopy
+
+numpy
+python-dateutil
+flask-sqlalchemy
+gunicorn
+python-dotenv

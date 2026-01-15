@@ -1,0 +1,21 @@
+services:
+    postgres:
+        image: postgres:15
+        container_name: paris_activities_db
+        environment:
+            POSTGRES_DB: paris_activities
+            POSTGRES_USER: paris_user
+            POSTGRES_PASSWORD: dev_password
+        ports:
+            - "5432:5432"
+        volumes:
+            - postgres_data:/var/lib/postgresql/data
+            - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
+        healthcheck:
+            test: ["CMD-SHELL", "pg_isready -U paris_user -d paris_activities"]
+            interval: 5s
+            timeout: 5s
+            retries: 5
+
+volumes:
+    postgres_data:
